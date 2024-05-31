@@ -12,7 +12,7 @@ namespace ValveKeyValue.Serialization.KeyValues1
             Require.NotNull(options, nameof(options));
 
             this.options = options;
-            writer = new StreamWriter(stream, new UTF8Encoding(), bufferSize: 1024, leaveOpen: true)
+            writer = new StreamWriter(stream, options.Encoding, bufferSize: 1024, leaveOpen: true)
             {
                 NewLine = "\n"
             };

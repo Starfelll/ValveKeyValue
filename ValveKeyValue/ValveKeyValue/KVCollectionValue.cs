@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace ValveKeyValue
 {
-    class KVCollectionValue : KVValue, IEnumerable<KVObject>
+    public class KVCollectionValue : KVValue, IEnumerable<KVObject>
     {
         public KVCollectionValue()
         {

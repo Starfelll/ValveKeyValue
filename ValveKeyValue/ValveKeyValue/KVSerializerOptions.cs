@@ -1,4 +1,5 @@
 using System.Runtime.InteropServices;
+using System.Text;
 
 namespace ValveKeyValue
 {
@@ -26,6 +27,12 @@ namespace ValveKeyValue
         /// Gets or sets a way to open any file referenced with <c>#include</c> or <c>#base</c>.
         /// </summary>
         public IIncludedFileLoader FileLoader { get; set; }
+
+
+        /// <summary>
+        /// The encoding to use when reading or writing strings.
+        /// </summary>
+        public Encoding Encoding { get; set; } = Encoding.Default;
 
         /// <summary>
         /// Gets the default options (used when none are specified).
